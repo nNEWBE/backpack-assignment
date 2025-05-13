@@ -1,4 +1,4 @@
-//?  Array Filtering and Mapping  
+//? Array Filtering and Mapping  
 
 type Person = {
     name: string;
@@ -11,9 +11,13 @@ const person: Person[] = [
     { name: "Nisa", age: 25, gender: "female" },
     { name: "Riyad", age: 35, gender: "male" },
     { name: "Ayesha", age: 28, gender: "female" }
-]
+];
 
-const maleNames = person.filter(person => person.gender !== "female")
-    .map(person => person.name);
+function getNonFemaleNames(people: Person[]): string[] {
+    return people
+        .filter(p => p.gender !== "female")
+        .map(p => p.name);
+}
 
-console.log(maleNames);
+const names = getNonFemaleNames(person);
+console.log(names);
