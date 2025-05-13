@@ -14,10 +14,10 @@ const books: Book[] = [
     { title: "The Catcher in the Rye", author: "J.D. Salinger", year: 1951 },
 ];
 
-const getBookTitles=(books:Book[])=>{
-    return books.map((book)=>book.title);
+const getBookTitles = (books: Book[]) => {
+    return books.map((book) => book.title);
 }
 
-const bookTitles=getBookTitles(books);
+const bookTitles = getBookTitles(books);
 console.log(bookTitles);
 
