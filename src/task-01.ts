@@ -13,8 +13,7 @@ const person: Person[] = [
     { name: "Ayesha", age: 28, gender: "female" }
 ]
 
-const female = person.filter((person) => person.gender === "female")
-const names = person.filter(person => person.gender !== "female")
+const maleNames = person.filter(person => person.gender !== "female")
     .map(person => person.name);
 
-console.log(names);
+console.log(maleNames);
